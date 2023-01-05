@@ -5,7 +5,7 @@ from fastapi import APIRouter, File, Request
 from starlette import status
 from starlette.responses import JSONResponse, RedirectResponse
 
-from controller.auth_controller.authentication import get_current_user
+from src.utils.authentication import get_current_user
 from face_auth.business_val.user_embedding_val import (
     UserLoginEmbeddingValidation,
     UserRegisterEmbeddingValidation,
